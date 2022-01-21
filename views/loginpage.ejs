@@ -1,0 +1,47 @@
+<!-- include header -->
+<%- include('include/_header') %>
+<!-- /include header -->
+
+<!--main login page-->
+
+<main id="site-main">
+
+    <div class="container">
+        <nav>
+            <div class="box-nav d-flex justify-between">
+                <a href="/login" class="border-shadow">
+                    <span class="text-gradient">Log In <i class="fas fa-user"></i></span>
+                </a>
+            </div>
+        </nav>
+
+    
+    <!-- form handling -->
+ <form action="/login" method="POST" id="login_owner">
+    <div class="new_user">
+        <div class="form-group">
+            <label for="name" class="text-light">Name</label>
+            <input type="hidden" name="id" value="">
+            <input type="text" name="name" value="" placeholder="Owner">
+        </div>
+        <div class="form-group">
+            <label for="password" class="text-light">Password</label>
+            <input type="password" name="password" value="" placeholder="password">
+        </div>
+        
+        
+
+        <div class="form-group">
+            <button type="submit" class="btn text-dark update">Login</button>
+        </div>
+
+    </div>
+
+    
+</form>
+</div>
+
+</main>
+<!-- include footer -->
+<%- include('include/_footer') %>
+<!-- /include footer -->
